@@ -1,0 +1,29 @@
+JSON file contain the electronic section of the ecommerce platform under which we have stored the laptop , mobile phones and led tv . 
+it contains the array which contains all in form of object describing with its type. 
+Main keys for the objects are :-
+1)  type = Which contain the type of the object either its laptop, mobile or led.
+2) brandname = This contain the name of the brand which manufacture the product .
+3) name = Name of the product or the model number by which it is been known in the market .
+4) color = This is the array which contains all the colors available for the product .
+5) specification = Technical specification of the product like it contains the which hardware space etc.
+6) price = The product pricing is been shown at which price the product will be sold .
+7) itemLeft = How many items are left in the inventory is shown here.
+8) rating = This contains the average rating of the product  which viewers has given .
+9) comments = the comment which user give about the product is been mentioned over here.
+
+JavaScript contain three function .
+
+1) readData(electronics)= This function is used to read all the objects in the array mentioned . This function prints all the object of the array in the console .
+
+2) findParticularEntry(electronics, name )= This function is used to find the object with the help of  name key value. It takes the electronics as thevalues and 
+the name variable which contains the name which want to find. under this we will run for each loop which will move to each object of the array and at each object
+with the help of the if loop it will compare the name provided by us and the name of the each object if the both matches the object will be printed with each key value
+in the console after that break of the block of statement will be done and if it doesnt match then the increament in the for loop will be done and when it reaches to 
+the last object and name of that object is also not matched then the condition of the else if loop will become true and it will print in the console that  object not found.
+
+3)findByIndex(electronics,indexNumber)= In this function we will find the object with the help of index number of object in the array. electronics is the array which is 
+given to us adn index number contain the number of the index value we want to find the element of . In this function we will take one for each loop under which 
+it will move to each object with help of its indexnumber , in for each loop there will be if loop which will compare both the index value and when it will found then
+the object at that index value will be printed and after that break is been called and we ll come out of the block statement . if value is not found then increament 
+in index value is done and again it will compare . if index value does'nt match and it comes to the now else if loop condition will become true and it will terminate 
+with printing that "object does'nt exist at the given index number ".  
